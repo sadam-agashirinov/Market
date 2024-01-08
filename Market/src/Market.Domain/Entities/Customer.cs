@@ -9,4 +9,9 @@ public class Customer : IEntity
 {
     /// <inheritdoc />
     public Guid Id { get; set; }
+
+    /// <summary>
+    /// Заказы клиента
+    /// </summary>
+    public List<Order> Orders { get; set; }
 }
